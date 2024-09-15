@@ -1,0 +1,23 @@
+
+/* The width of the page should be set to 960px, all text should be Arial, Helvetica, 
+sans-serif, the size of the text should be 1em, and the line height should be adjusted to 2em (double-spaced). */
+body {
+    width: 960px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+/* Remove the margins from the top, right, and bottom of the web page. 
+You should only have a left margin of 20px that is carried over from the inline style in the <body> tag. */
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
