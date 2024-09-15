@@ -1,23 +1,73 @@
-
 /* The width of the page should be set to 960px, all text should be Arial, Helvetica, 
 sans-serif, the size of the text should be 1em, and the line height should be adjusted to 2em (double-spaced). */
 body {
-    width: 960px;
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    line-height: 2em;
-}
-
-/* Remove the margins from the top, right, and bottom of the web page. 
-You should only have a left margin of 20px that is carried over from the inline style in the <body> tag. */
-body {
+  width: 960px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 2em;
 }
 
+/* Remove the margins from the top, right, and bottom of the web page. 
+You should only have a left margin of 20px that is carried over from the inline style in the <body> tag. */
+
+
+/* Adjust the main navigation menu so that it’s spaced correctly and that the list that the navigation menu is in is also formatted to look like my finished design. 
+Pay close attention to the margins/paddings or lack thereof. Also pay attention to the fact that the bullets have been removed from the list. 
+When you begin to build out the Solutions page however, note that the bullets are missing from the navigation menu but remain in the lists within each solution’s
+ description. */
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
+
+/* Stylize all of the headings on each web page. Colors that you will use here include #DFE3E6 (light grey), 
+#929CA4 (dark grey), and #CC1C0D (red). Note that headings also have a border, curved corners, and a 
+slight padding on the left side of each heading. */
+h2, h3 {
+  color: #CC1C0D; /* Red */
+  background-color: #DFE3E6; /* Light grey background */
+  border: 1px solid #929CA4; /* Dark grey border */
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+
+/* Change the color of all your hyperlinks to #CC1C0D (red). */
+a {
+  color: #CC1C0D;
+}
+
+/* On the main page, pay close attention to the logo images for each solution. 
+Notice how the tops of each image align pretty close to the top of each solution title. 
+Also note that there’s a little space between the text and logo image on the right side of the image. */
+.main-page-logos {
+  float: left;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+
+}
+/* Note that I used a class selector above so that it only gets applied to the main page!*/
+
+/* On the About Us page, you will need to isolate each bio. 
+You can do this by wrapping each bio within its own <section> element. 
+Then stylize that <section> element including the image and paragraphs within each <section> element until you have what I have. */
+section img {
+  float: left;
+  border-color: red;
+  border-style: solid;
+  border-radius: 100px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+/* The Pricing page will need quite a bit of modification. You’ll need to take advantage of the <section> element and “pricing” class that 
+I’ve added for you here in order to attach styles to this element. The colors for the dividers on the pricing table 
+are #CC1C0D, #37A4A4, #685288, and #000000. Additionally, you’ll need to wrap each solution/price within a <div> element
+so you end up with 4 div elements…one for each solution. 
+Remember, you will need to use float in order to get those <div> elements to appear next to one another. */
