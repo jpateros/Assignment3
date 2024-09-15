@@ -57,7 +57,7 @@ Also note that there’s a little space between the text and logo image on the r
 /* On the About Us page, you will need to isolate each bio. 
 You can do this by wrapping each bio within its own <section> element. 
 Then stylize that <section> element including the image and paragraphs within each <section> element until you have what I have. */
-section img {
+.about-us-img {
   float: left;
   border-color: red;
   border-style: solid;
@@ -71,3 +71,41 @@ I’ve added for you here in order to attach styles to this element. The colors 
 are #CC1C0D, #37A4A4, #685288, and #000000. Additionally, you’ll need to wrap each solution/price within a <div> element
 so you end up with 4 div elements…one for each solution. 
 Remember, you will need to use float in order to get those <div> elements to appear next to one another. */
+
+.pricing div {
+  text-align: center;
+  width: 250px;
+  border: 1px #929CA4 solid;
+  border-radius: 10px;
+  margin-right: 5px;
+  padding-top: 10px;
+}
+
+.pricing img {
+  float: none;
+}
+
+.pricing div:nth-child(1) h3 {
+  border-top: 10px solid #CC1C0D;
+}
+
+.pricing div:nth-child(2) h3 {
+  border-top: 10px solid #37A4A4;
+}
+
+.pricing div:nth-child(3) h3 {
+  border-top: 10px solid #685288;
+}
+
+.pricing div:nth-child(4) h3 {
+  border-top: 10px solid black;
+}
+
+/* offset since this one doesnt have an image*/
+.pricing div:nth-child(4) {
+  padding-top: 25px;
+}
+
+.pricing {
+  display: flex;
+}
