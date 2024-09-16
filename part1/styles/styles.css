@@ -32,13 +32,11 @@ Apply this class to each solution title within the “Our Solutions” section. 
     font-weight: bold;
 }
 
-#testimonial1 {
+/* Uniquely ID each of the two client testimonials. Call the first one testimonial1 and the second one testimonial2. 
+Using a multiple element selector, stylize both paragraphs to be italicized and indented in about 50px. 
+Use the margin property here to accomplish this task. */
+#testimonial1, #testimonial2 {
     font-style: italic; 
-    margin-left: 50px;   
-}
-
-#testimonial2 {
-    font-style: italic;  
     margin-left: 50px;   
 }
 
@@ -70,10 +68,12 @@ ul {
     list-style-type: none;
 }
 
+/* Using a pseudo-class selector, select the first item in the management team list and make it blue. */
 ul li:first-child {
     color: blue;
 }
 
+/* Using a pseudo-class selector, select the last item in the management team list and make it red. */
 ul li:last-child {
     color: red;
 }
